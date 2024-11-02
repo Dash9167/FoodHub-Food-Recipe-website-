@@ -1,0 +1,136 @@
+.login-page {
+  background: #282c34;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bgchange 9s infinite ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@keyframes bgchange {
+  0% {
+    background-image: url("../login-bg1.jpg");
+  }
+  30% {
+    background-image: url("../login-bg3.jpg");
+  }
+  60% {
+    background-image: url("../login-bg4.jpg");
+  }
+  100% {
+    background-image: url("../login-bg2.jpg");
+  }
+}
+.container {
+  background-color: rgb(227, 221, 221);
+  padding: 2rem 2rem;
+  border-radius: 5px;
+  width: 350px;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+.input-form input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 1rem 0;
+  font-size: large;
+}
+.input-form input:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgb(134, 131, 131);
+}
+.input-form label {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.container button {
+  margin-top: 1rem;
+  width: 100%;
+  border: none;
+  font-size: larger;
+  background: green;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 1s ease-in-out;
+}
+.container button:hover {
+  box-shadow: 0px 0px 10px rgb(134, 131, 131);
+  background-color: darkorange;
+}
+@media (max-width: 786px) {
+  .container {
+    width: 250px;
+    height: max-content;
+  }
+}
+.login-message {
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.red {
+  color: red;
+  font-size: 15px;
+  line-height: 1rem;
+}
+.login-message ul {
+list-style: none;
+}
+.login-message li{
+  
+}
+.register {
+  color: blue;
+  font-size: 15px;
+  margin: 1rem 0;
+  display: flex;
+
+  justify-content: space-between;
+  position: relative;
+}
+.register .h3 {
+  position: absolute;
+  right: 1%;
+  
+  cursor: pointer;
+}
+.register p{
+  cursor: pointer;
+}
+.register .h3:hover {
+  text-decoration: underline;
+}
+
+.loading-form {
+
+  
+  width: fit-content;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: monospace;
+  clip-path: inset(0 3ch 0 0);
+  animation: loader 1s steps(4) infinite;
+  margin: 8px;
+}
+.loading-form::before {
+  content: "Loading...";
+ 
+}
+@keyframes loader {
+  to{clip-path: inset(0 -1ch 0 0);}
+}
+.success{
+  color: green;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: monospace;
+}

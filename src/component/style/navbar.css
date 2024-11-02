@@ -1,0 +1,45 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(48, 47, 47);
+    height: 4rem;
+   
+  
+}
+.nav-logo{
+color: aliceblue;
+}
+.nav-logo span{
+    color: chartreuse;
+}
+.nav-menu{
+    display: flex;
+    gap: 3rem;
+   
+}
+.nav-menu {
+
+}
+.nav-menu h3{
+    color: white;
+    transition: .8s ease-in;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.Link{
+    color: white;
+    text-decoration: none;
+}
+.Link:hover{
+    color: rgb(220, 185, 119);
+    border-bottom: 1.5px solid  rgb(220, 185, 119);
+    
+}
+@media (max-width:786px) {
+    .nav-menu{
+        font-size: 12px;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,53 @@
+.fav{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+}
+.fav-container{
+    
+    flex-direction: column;
+    gap: 5rem;
+    color: aliceblue;
+    width: 80%;
+    padding: 1rem;
+}
+.fav-list-row
+{
+    background-color: white;
+    padding: 1rem ;
+    color: black;
+    border-radius: 10px;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media (max-width:786px) {
+    .fav-container{
+        width: 90%;
+       
+       
+    }
+    .fav{
+      height: max-content;
+        
+    }
+    
+   .fav-list-row{
+    flex-direction: column;
+   }
+}
+.fav-list-row img{
+    
+    width: 110px;
+}
+.fav-item{
+    padding: 10px;
+}
+.btn-remove button{
+    padding: 10px 15px;
+    border-radius: 10px;
+   margin: 10px;
+}
