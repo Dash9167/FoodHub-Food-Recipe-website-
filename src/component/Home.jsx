@@ -12,7 +12,7 @@ navigate('/favourate')
    <>
     <div className="home">
       <div className="home-img">
-        <h1>Learn cook,share & made cooking easy. </h1>
+        <h1>Learn ,share  & made cooking easy. </h1>
       </div>
       <div className="home-content">
         <p>
